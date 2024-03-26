@@ -1,5 +1,5 @@
 import React from "react";
-import PageHead from "../Head";
+import PageHead from "../../pages/Head";
 import Context from "@/context/Context";
 import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import PopupMobileMenu from "@/components/Header/PopupMobileMenu";

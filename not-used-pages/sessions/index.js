@@ -1,15 +1,15 @@
 import React from "react";
-import PageHead from "../Head";
+import PageHead from "../../pages/Head";
 import Context from "@/context/Context";
 import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import PopupMobileMenu from "@/components/Header/PopupMobileMenu";
 import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
-import ProfileDetails from "@/components/ProfileDetails/ProfileDetails";
+import Sessions from "@/components/Sessions/Sessions";
 
-const ProfileDetailsPage = () => {
+const SessionsPage = () => {
   return (
     <>
-      <PageHead title="Profile Details" />
+      <PageHead title="Sessions" />
 
       <main className="page-wrapper rbt-dashboard-page">
         <Context>
@@ -18,7 +18,7 @@ const ProfileDetailsPage = () => {
             <PopupMobileMenu />
             <LeftpanelDashboard />
 
-            <ProfileDetails />
+            <Sessions />
           </div>
         </Context>
       </main>
@@ -26,4 +26,4 @@ const ProfileDetailsPage = () => {
   );
 };
 
-export default ProfileDetailsPage;
+export default SessionsPage;

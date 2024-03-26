@@ -1,5 +1,5 @@
 import React from "react";
-import PageHead from "../Head";
+import PageHead from "../../pages/Head";
 import Context from "@/context/Context";
 import HeaderTop from "@/components/Header/HeaderTop/Header-Top";
 import Header from "@/components/Header/Header";
