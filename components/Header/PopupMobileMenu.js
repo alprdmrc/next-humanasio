@@ -3,6 +3,7 @@ import { useAppContext } from "@/context/Context";
 
 import logoLight from "../../public/images/logo/logo.png";
 import logoDark from "../../public/images/logo/logo-dark.png";
+import humanaslogo from "../../public/images/logo/gradientlogo.png";
 
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";
@@ -37,14 +38,14 @@ const PopupMobileMenu = () => {
               <Link href="/">
                 <Image
                   className="logo-light"
-                  src={logoLight}
+                  src={humanaslogo}
                   width={172}
                   height={30}
                   alt="Corporate Logo"
                 />
                 <Image
                   className="logo-dark"
-                  src={logoDark}
+                  src={humanaslogo}
                   width={172}
                   height={30}
                   alt="Corporate Logo"

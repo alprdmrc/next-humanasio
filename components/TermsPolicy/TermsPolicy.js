@@ -15,7 +15,7 @@ const TermsPolicy = () => {
             <div className="content-page pb--50">
               <div className="chat-box-list">
                 <div className="content">
-                  <h4>Welcome to ChatenAI Privacy Policy</h4>
+                  <h4>Welcome to Humanasio Privacy Policy</h4>
                   <ol>
                     <li>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -48,9 +48,7 @@ const TermsPolicy = () => {
                     <li>
                       We collect certain personal information about visitors and
                       users of our Sites.{" "}
-                      <Link href="http://rainbowit.net/themes/imroz">
-                        http://rainbowit.net/themes/imroz
-                      </Link>
+                      <Link href="http://humanas.io">http://humanas.io</Link>
                     </li>
                     <li>
                       Ut enim ad minima veniam, quis nostrum exercitationem

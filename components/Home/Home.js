@@ -82,6 +82,7 @@ const Home = () => {
                     className="btn-default rounded-player popup-video border bg-white-dropshadow"
                     href="/video/humanas-video.mp4"
                     data-vbtype="video"
+                    data-maxwidth="1080px"
                   >
                     <span>
                       <i className="feather-play"></i>
@@ -132,15 +133,7 @@ const FlippingTextHeader = ({ texts }) => {
   }, [nextText, texts, index]);
 
   return (
-    <div
-      style={{
-        margin: "0 auto",
-        position: "relative",
-        height: "60px",
-        width: "600px",
-        overflow: "hidden",
-      }}
-    >
+    <div className="flippingText-wrapper">
       <div
         className="flipping-text-current theme-gradient-secondary"
         style={{ position: "absolute", width: "100%" }}
