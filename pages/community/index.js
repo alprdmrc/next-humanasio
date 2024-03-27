@@ -1,22 +1,50 @@
-import React from "react";
-
-import Data from "../../data/home.json";
-
 import PageHead from "../Head";
 import Context from "@/context/Context";
-import HeaderTop from "@/components/Header/HeaderTop/Header-Top";
 import Header from "@/components/Header/Header";
 import PopupMobileMenu from "@/components/Header/PopupMobileMenu";
 import Footer from "@/components/Footer/Footer";
 import Copyright from "@/components/Footer/Copyright";
 import TeamMember from "@/components/Community/TeamMember";
 
-const Community = () => {
+export async function getStaticProps() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/team-members?populate=picture`;
+  try {
+    const res = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
+      },
+    });
+    console.log("Response", res);
+    if (!res.ok) {
+      throw new Error(`Failed to fetch, status: ${res.status}`);
+    }
+    const teamMembers = await res.json();
+    return {
+      props: {
+        teamMembers,
+      },
+    };
+  } catch (error) {
+    console.error("Fetching error:", error.message);
+    return {
+      props: {
+        teamMembers: [],
+      },
+    };
+  }
+}
+
+export default function Community(props) {
+  const { teamMembers } = props;
+  // console.log("teamMembers", teamMembers);
+
   const parentClass = "col-xl-3 col-lg-6 col-md-6 col-12";
   const childClass = "tab-content p-0 bg-transparent border-0 border bg-light";
   const isHeading = true;
   const gap = true;
-  console.log(Data.team);
+
   return (
     <>
       <PageHead title="Community" />
@@ -130,14 +158,13 @@ const Community = () => {
                         aria-labelledby="nav-team-tab"
                       >
                         <div className="row row--15 mt_dec--30">
-                          {Data &&
-                            Data.team.map((data, index) => (
-                              <TeamMember
-                                data={data}
-                                key={index}
-                                parentClass={parentClass}
-                              />
-                            ))}
+                          {teamMembers.data.map((data, index) => (
+                            <TeamMember
+                              data={data}
+                              key={index}
+                              parentClass={parentClass}
+                            />
+                          ))}
                         </div>
                       </div>
                       <div
@@ -147,16 +174,15 @@ const Community = () => {
                         aria-labelledby="nav-hrs-tab"
                       >
                         <div className="row row--15 mt_dec--30">
-                          {Data &&
-                            Data.team
-                              //   .slice(start, end)
-                              .map((data, index) => (
-                                <TeamMember
-                                  data={data}
-                                  key={index}
-                                  parentClass={parentClass}
-                                />
-                              ))}
+                          {teamMembers.data
+                            //   .slice(start, end)
+                            .map((data, index) => (
+                              <TeamMember
+                                data={data}
+                                key={index}
+                                parentClass={parentClass}
+                              />
+                            ))}
                         </div>
                       </div>
 
@@ -167,16 +193,15 @@ const Community = () => {
                         aria-labelledby="nav-cands-tab"
                       >
                         <div className="row row--15">
-                          {Data &&
-                            Data.team
-                              //   .slice(start, end)
-                              .map((data, index) => (
-                                <TeamMember
-                                  data={data}
-                                  key={index}
-                                  parentClass={parentClass}
-                                />
-                              ))}
+                          {teamMembers.data
+                            //   .slice(start, end)
+                            .map((data, index) => (
+                              <TeamMember
+                                data={data}
+                                key={index}
+                                parentClass={parentClass}
+                              />
+                            ))}
                         </div>
                       </div>
                     </div>
@@ -192,6 +217,4 @@ const Community = () => {
       </main>
     </>
   );
-};
-
-export default Community;
+}

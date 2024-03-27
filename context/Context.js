@@ -50,7 +50,7 @@ const Context = ({ children }) => {
         rightBar,
         setRightBar,
         shouldCollapseLeftbar,
-        shouldCollapseRightbar
+        shouldCollapseRightbar,
       }}
     >
       {children}

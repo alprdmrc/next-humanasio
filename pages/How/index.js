@@ -26,7 +26,30 @@ const How = () => {
           >
             <div className="col-lg-12 col-xl-6 col-12">
               <div className="thumbnail">
-                <Image className="radius" src={splitImg} alt="split Images" />
+                {step.image && (
+                  <Image
+                    width={1217}
+                    height={1100}
+                    className="radius"
+                    src={step.image}
+                    alt="split Images"
+                  />
+                )}
+                {step.video && (
+                  <video
+                    width="650"
+                    height="589"
+                    controls={false}
+                    autoPlay
+                    muted
+                    loop
+                    preload
+                    className="radius"
+                  >
+                    <source src={step.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
               </div>
             </div>
             <div className="col-lg-12 col-xl-6 col-12">

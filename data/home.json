@@ -3,22 +3,26 @@
     {
       "header": "1. Invite",
       "title": "Easily send invitations through the system.",
-      "desc": "Invite your candidates and company employees to a unique journey with Lazy Guru, Humanas' gamified career application."
+      "desc": "Invite your candidates and company employees to a unique journey with Lazy Guru, Humanas' gamified career application.",
+      "image": "/images/steps/1.jpg"
     },
     {
       "header": "2. Connect",
       "title": "Build your connections.",
-      "desc": "The metaphorical journey in practice will reveal the personality types and professional potentials of candidates and employees. Fun, understandable and more realistic than ever. Here is Meta CV!"
+      "desc": "The metaphorical journey in practice will reveal the personality types and professional potentials of candidates and employees. Fun, understandable and more realistic than ever. Here is Meta CV!",
+      "video": "/images/steps/wanderlust.mp4"
     },
     {
       "header": "3. Manage",
       "title": "Review, group and compare meta CVs.",
-      "desc": "Review the Meta CVs of employees and candidates thanks to smart filters, create as many groups as you want and access compliance reports instantly."
+      "desc": "Review the Meta CVs of employees and candidates thanks to smart filters, create as many groups as you want and access compliance reports instantly.",
+      "image": "/images/steps/wanderlust.jpg"
     },
     {
       "header": "4. Analyse",
       "title": "Humanas AID: Review your needs.",
-      "desc": "Take a closer look at your employee, candidate and company thanks to Humanas' smart algorithms; dedication, persuasion, leadership, agility, etc. Get recommendations based on productivity scores."
+      "desc": "Take a closer look at your employee, candidate and company thanks to Humanas' smart algorithms; dedication, persuasion, leadership, agility, etc. Get recommendations based on productivity scores.",
+      "image": "/images/steps/2.jpg"
     }
   ],
   "service": [

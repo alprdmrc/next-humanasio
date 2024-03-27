@@ -28,14 +28,23 @@ const TeamMember = ({ data, parentClass }) => {
               <div className="pricing-header">
                 <div className="pricing">
                   <div className="price-wrapper">
-                    <Image width={400} height={600} src={data.picture} />
+                    <Image
+                      width={400}
+                      height={600}
+                      src={
+                        process.env.NEXT_PUBLIC_STRAPI_API_URL +
+                        data.attributes.picture.data.attributes.url
+                      }
+                    />
                   </div>
                 </div>
                 <div className="separator-animated animated-true mt--10 mb--10"></div>
               </div>
               <div className="pricing-body">
-                <h4 className="b1 mb--0">{data.name}</h4>
-                <span className="subtitle">{data.title}</span>
+                <h4 className="b1 mb--0">{data.attributes.name}</h4>
+                <span className="subtitle">
+                  {data.attributes.title},{data.attributes.title2}
+                </span>
                 {/* <ul className="list-style--1">
                   {data.subItem.map((innerData, innerIndex) => (
                     <li key={innerIndex}>
@@ -54,10 +63,10 @@ const TeamMember = ({ data, parentClass }) => {
               <Link
                 className={`btn-border`}
                 target="_blank"
-                href={`${data.link}`}
+                href={`${data.attributes.link}`}
               >
                 <div className="icon">
-                  <i className={`feather-${data.icon}`}></i>
+                  <i className={`feather-linkedin`}></i>
                 </div>
               </Link>
             </div>
