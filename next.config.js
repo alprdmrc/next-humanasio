@@ -5,6 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "http",
