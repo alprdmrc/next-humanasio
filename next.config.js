@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: "_next",
+  output: "export",
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   images: {
