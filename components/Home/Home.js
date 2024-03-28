@@ -80,7 +80,7 @@ const Home = () => {
                 <div className="video-icon">
                   <Link
                     className="btn-default rounded-player popup-video border bg-white-dropshadow"
-                    href="/video/humanas-video.mp4"
+                    href="/video/humanas-video-en.mp4"
                     data-vbtype="video"
                     data-maxwidth="1080px"
                   >
