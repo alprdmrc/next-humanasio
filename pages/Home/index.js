@@ -16,6 +16,7 @@ import Copyright from "@/components/Footer/Copyright";
 import PageHead from "../Head";
 import How from "../How";
 import Testimonial from "@/components/Testimonial/Testimonial";
+import Trigger from "@/components/Trigger/Trigger";
 
 const HomePage = () => {
   return (
@@ -33,20 +34,20 @@ const HomePage = () => {
           <PopupMobileMenu />
 
           <Home />
-          <Brands />
-          <Separator top={false} />
+          {/* <Brands /> */}
+          {/* <Separator top={false} /> */}
           <Service />
           <Separator top={true} />
           {/* <Timeline />
           <Separator top={false} /> */}
           <How />
-          <Separator top={false} />
+          {/* <Separator top={false} /> */}
           {/* <Pricing />
           <Separator top={true} /> */}
-          <Accordion isHead={true} />
-          <Separator top={false} />
+          {/* <Accordion isHead={true} /> */}
+          {/* <Separator top={false} /> */}
 
-          <Testimonial />
+          {/* <Testimonial /> */}
           {/* <CallToAction /> */}
 
           <Footer />

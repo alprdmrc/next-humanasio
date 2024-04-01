@@ -26,9 +26,9 @@
 </linearGradient>
 <linearGradient id="paint2_linear_6_142" x1="0" y1="0.999287" x2="1200" y2="0.999202" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0AA973" stop-opacity="0"/>
-<stop offset="0.338542" stop-color="#8E8FFA" stop-opacity="0.697917"/>
-<stop offset="0.5" stop-color="#6070cf" stop-opacity="0.6"/>
-<stop offset="0.666667" stop-color="#8E8FFA" stop-opacity="0.760417"/>
+<stop offset="0.338542" stop-color="#4179fe" stop-opacity="0.697917"/>
+<stop offset="0.5" stop-color="#0dc9b1" stop-opacity="0.6"/>
+<stop offset="0.666667" stop-color="#4179fe" stop-opacity="0.760417"/>
 <stop offset="1" stop-color="#0AA973" stop-opacity="0"/>
 </linearGradient>
 </defs>

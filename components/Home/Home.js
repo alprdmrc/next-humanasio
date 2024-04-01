@@ -7,7 +7,7 @@ import "venobox/dist/venobox.min.css";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import bannerImg from "../../public/images/banner/banner-image-03.png";
+import bannerImg from "../../public/video/Video Kapak1.jpg";
 import separator from "../../public/images/separator/separator-top.svg";
 import separatorBottom from "../../public/images/separator/separator-bottom.svg";
 
@@ -52,11 +52,13 @@ const Home = () => {
                 {/* <h2 className=""> */}
                 {/* Our Goal Is */}
                 {/* </h2> */}
-                <p className="b1 desc-text">AI-Powered Human Analytics Tool.</p>
+                <p className="b1 desc-text">
+                  AI-Assisted Human Analytics Tool.
+                </p>
                 <div className="button-group">
                   <Link
                     className="btn-default bg-light-gradient btn-large"
-                    href="https://app.humanas.io/"
+                    href="https://app.humanas.io/register"
                     target="_blank"
                   >
                     <div className="has-bg-light"></div>
@@ -83,6 +85,7 @@ const Home = () => {
                     href="/video/humanas-video-en.mp4"
                     data-vbtype="video"
                     data-maxwidth="1080px"
+                    data-autoplay="true"
                   >
                     <span>
                       <i className="feather-play"></i>

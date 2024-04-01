@@ -94,9 +94,7 @@ const How = () => {
                   data-sal-duration="400"
                   data-sal-delay="400"
                 >
-                  <Link className="btn-default" href="/contact">
-                    Contact With Us
-                  </Link>
+                  <Image src={step.trigger} width={250} height={50} />
                 </div>
               </div>
             </div>

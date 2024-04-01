@@ -1,42 +1,5 @@
 {
-  "navDashboardItem": [
-    {
-      "link": "/profile-details",
-      "text": "Profile"
-    },
-    {
-      "link": "/notification",
-      "text": "Notification"
-    },
-    {
-      "link": "/chat-export",
-      "text": "Chat Export"
-    },
-    {
-      "link": "/appearance",
-      "text": "Appearance"
-    },
-    {
-      "link": "/plans-billing",
-      "text": "Plans and Billing"
-    },
-    {
-      "link": "/sessions",
-      "text": "Sessions"
-    },
-    {
-      "link": "/application",
-      "text": "Application"
-    },
-    {
-      "link": "/release-notes",
-      "text": "Release notes"
-    },
-    {
-      "link": "/help",
-      "text": "Help & FAQs"
-    }
-  ],
+  "navDashboardItem": [],
   "toolsItem": [
     {
       "link": "/text-generator",

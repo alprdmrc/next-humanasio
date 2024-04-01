@@ -4,25 +4,29 @@
       "header": "1. Invite",
       "title": "Easily send invitations through the system.",
       "desc": "Invite your candidates and company employees to a unique journey with Lazy Guru, Humanas' gamified career application.",
-      "image": "/images/steps/1.jpg"
+      "image": "/images/steps/1.jpg",
+      "trigger": "/images/steps/1-Lazy guru.svg"
     },
     {
       "header": "2. Connect",
       "title": "Build your connections.",
       "desc": "The metaphorical journey in practice will reveal the personality types and professional potentials of candidates and employees. Fun, understandable and more realistic than ever. Here is Meta CV!",
-      "video": "/images/steps/2.mp4"
+      "video": "/images/steps/2.mp4",
+      "trigger": "/images/steps/2-meta cv.svg"
     },
     {
       "header": "3. Manage",
       "title": "Review, group and compare meta CVs.",
       "desc": "Review the Meta CVs of employees and candidates thanks to smart filters, create as many groups as you want and access compliance reports instantly.",
-      "image": "/images/steps/3.jpg"
+      "image": "/images/steps/3.jpg",
+      "trigger": "/images/steps/3-Humanas HR.svg"
     },
     {
       "header": "4. Analyse",
       "title": "Humanas AID: Review your needs.",
       "desc": "Take a closer look at your employee, candidate and company thanks to Humanas' smart algorithms; dedication, persuasion, leadership, agility, etc. Get recommendations based on productivity scores.",
-      "image": "/images/steps/4.jpg"
+      "image": "/images/steps/4.jpg",
+      "trigger": "/images/steps/4-Humanas AID.svg"
     }
   ],
   "service": [
