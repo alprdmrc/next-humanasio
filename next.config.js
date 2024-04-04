@@ -8,14 +8,13 @@ const nextConfig = {
     // loader: "custom",
     // loaderFile: "./my-loader.js",
     unoptimized: true,
-    // remotePatterns: [
-    //   {
-    //     protocol: "http",
-    //     hostname: "strapi.gidebilirmiyim.com",
-    //     port: "1337",
-    //     pathname: "/uploads/**",
-    //   },
-    // ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "strapi.gidebilirmiyim.com",
+        pathname: "/uploads/**",
+      },
+    ],
   },
 };
 

@@ -11,39 +11,39 @@ import Link from "next/link";
 import sal from "sal.js";
 import { useEffect } from "react";
 
-// export async function getStaticProps() {
-//   const apiUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/team-members?populate=picture`;
-//   try {
-//     const res = await fetch(apiUrl, {
-//       method: "GET",
-//       headers: {
-//         "Content-Type": "application/json",
-//         Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
-//       },
-//     });
-//     console.log("Response", res);
-//     if (!res.ok) {
-//       throw new Error(`Failed to fetch, status: ${res.status}`);
-//     }
-//     const teamMembers = await res.json();
-//     return {
-//       props: {
-//         teamMembers,
-//       },
-//     };
-//   } catch (error) {
-//     console.error("Fetching error:", error.message);
-//     return {
-//       props: {
-//         teamMembers: [],
-//       },
-//     };
-//   }
-// }
+export async function getStaticProps() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/team-members?populate=picture`;
+  try {
+    const res = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
+      },
+    });
+    console.log("Response", res);
+    if (!res.ok) {
+      throw new Error(`Failed to fetch, status: ${res.status}`);
+    }
+    const teamMembers = await res.json();
+    return {
+      props: {
+        teamMembers,
+      },
+    };
+  } catch (error) {
+    console.error("Fetching error:", error.message);
+    return {
+      props: {
+        teamMembers: [],
+      },
+    };
+  }
+}
 
 export default function Community(props) {
   const { teamMembers } = props;
-  // console.log("teamMembers", teamMembers);
+  console.log("teamMembers", teamMembers);
 
   const parentClass = "col-xl-3 col-lg-6 col-md-6 col-12";
   const childClass = "tab-content p-0 bg-transparent border-0 border bg-light";
@@ -263,7 +263,7 @@ export default function Community(props) {
                         </div>
                       </div>
                       {/* TEAM */}
-                      {/* <div
+                      <div
                         className="tab-pane fade active show"
                         id="nav-team"
                         role="tabpanel"
@@ -278,7 +278,7 @@ export default function Community(props) {
                             />
                           ))}
                         </div>
-                      </div> */}
+                      </div>
                       {/* CANDIDATES */}
                       <div
                         className="tab-pane fade"

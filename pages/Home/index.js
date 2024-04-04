@@ -18,7 +18,39 @@ import How from "../How";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Trigger from "@/components/Trigger/Trigger";
 
-const HomePage = () => {
+export async function getStaticProps() {
+  const apiUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/humanasio-home-page?populate[HowSection][populate]=*&populate[WhySection][populate]=*`;
+  try {
+    const res = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
+      },
+    });
+
+    if (!res.ok) {
+      throw new Error(`Failed to fetch, status: ${res.status}`);
+    }
+    const homePageContent = await res.json();
+    console.log("Response--Home", homePageContent);
+    return {
+      props: {
+        homePageContent,
+      },
+    };
+  } catch (error) {
+    console.error("Fetching error:", error.message);
+    return {
+      props: {
+        homePageContent: {},
+      },
+    };
+  }
+}
+
+export default function HomePage({ homePageContent }) {
+  console.log("Home Component", homePageContent);
   return (
     <>
       <PageHead title="Home" />
@@ -36,11 +68,11 @@ const HomePage = () => {
           <Home />
           {/* <Brands /> */}
           {/* <Separator top={false} /> */}
-          <Service />
+          <Service whySection={homePageContent.data.attributes.WhySection} />
           <Separator top={true} />
           {/* <Timeline />
           <Separator top={false} /> */}
-          <How />
+          <How howSection={homePageContent.data.attributes.HowSection} />
           {/* <Separator top={false} /> */}
           {/* <Pricing />
           <Separator top={true} /> */}
@@ -56,6 +88,4 @@ const HomePage = () => {
       </main>
     </>
   );
-};
-
-export default HomePage;
+}

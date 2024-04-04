@@ -5,7 +5,8 @@ import sal from "sal.js";
 import ServiceItem from "./ServiceItem";
 import ServiceData from "../../data/home.json";
 
-const Service = () => {
+const Service = ({ whySection }) => {
+  console.log(whySection);
   useEffect(() => {
     sal();
 
@@ -47,7 +48,7 @@ const Service = () => {
           </div>
 
           <div className="row row--15 service-wrapper">
-            <ServiceItem ServiceData={ServiceData} />
+            <ServiceItem ServiceData={whySection} />
           </div>
         </div>
       </div>

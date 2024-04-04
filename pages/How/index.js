@@ -2,9 +2,8 @@ import Split from "@/components/Split/Split";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import splitImg from "../../public/images/split/split-8.png";
-import HowData from "../../data/home.json";
-const How = () => {
+const How = ({ howSection }) => {
+  console.log("howSection", howSection);
   return (
     <>
       <div
@@ -17,7 +16,7 @@ const How = () => {
           <span className="theme-gradient">HOW?</span>
         </h4>
       </div>
-      {HowData.how.map((step, index) => (
+      {howSection.map((step, index) => (
         <Split key={index}>
           <div
             className={`${
@@ -26,16 +25,19 @@ const How = () => {
           >
             <div className="col-lg-12 col-xl-6 col-12">
               <div className="thumbnail">
-                {step.image && (
+                {step.image.data.attributes.mime.includes("image") && (
                   <Image
                     width={1217}
                     height={1100}
                     className="radius"
-                    src={step.image}
-                    alt="split Images"
+                    src={
+                      process.env.NEXT_PUBLIC_STRAPI_API_URL +
+                      step.image.data.attributes.url
+                    }
+                    alt={step.image.data.attributes.name}
                   />
                 )}
-                {step.video && (
+                {step.image.data.attributes.mime.includes("video") && (
                   <video
                     width="650"
                     height="589"
@@ -46,7 +48,13 @@ const How = () => {
                     preload
                     className="radius"
                   >
-                    <source src={step.video} type="video/mp4" />
+                    <source
+                      src={
+                        process.env.NEXT_PUBLIC_STRAPI_API_URL +
+                        step.image.data.attributes.url
+                      }
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                 )}
@@ -76,7 +84,7 @@ const How = () => {
                   data-sal-duration="400"
                   data-sal-delay="300"
                 >
-                  {step.desc}
+                  {step.description}
                 </p>
                 {/* <ul
                   className="split-list"
@@ -94,7 +102,14 @@ const How = () => {
                   data-sal-duration="400"
                   data-sal-delay="400"
                 >
-                  <Image src={step.trigger} width={250} height={50} />
+                  <Image
+                    src={
+                      process.env.NEXT_PUBLIC_STRAPI_API_URL +
+                      step.logo.data.attributes.url
+                    }
+                    width={250}
+                    height={50}
+                  />
                 </div>
               </div>
             </div>
