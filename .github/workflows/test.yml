@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 21.5.0
+          node-version: 20.12.2
 
       - name: Install dependencies and build Next.js app
         run: |
@@ -27,7 +27,7 @@ jobs:
           npm run build  # Build Next.js app
 
       - name: Deploy via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER_TEST }}
           username: ${{ secrets.FTP_USERNAME_TEST }}
