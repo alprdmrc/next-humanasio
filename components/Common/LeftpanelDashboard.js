@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 import avatar from "../../public/images/team/team-01.jpg";
 
@@ -10,10 +12,10 @@ import HeaderData from "../../data/header.json";
 import { useAppContext } from "@/context/Context";
 
 const LeftpanelDashboard = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const { shouldCollapseLeftbar } = useAppContext();
 
-  const isActive = (href) => router.pathname === href;
+  const isActive = (href) => pathname.startsWith(href);
 
   return (
     <>

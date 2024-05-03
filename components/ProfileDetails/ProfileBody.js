@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 const ProfileBody = () => {
@@ -89,11 +91,7 @@ const ProfileBody = () => {
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                   <div className="form-group">
                     <label htmlFor="username">User Name</label>
-                    <input
-                      id="username"
-                      type="text"
-                      defaultValue="Rafi"
-                    />
+                    <input id="username" type="text" defaultValue="Rafi" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -192,7 +190,6 @@ const ProfileBody = () => {
               >
                 <div className="col-11 text-Center">
                   <p className="mb--20">
-            
                     <strong>Warning: </strong>Deleting your account will
                     permanently erase all your data and cannot be reversed. This
                     includes your profile, conversations, comments, and any

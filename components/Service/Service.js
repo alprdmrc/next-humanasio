@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 
 import sal from "sal.js";
@@ -5,8 +7,7 @@ import sal from "sal.js";
 import ServiceItem from "./ServiceItem";
 import ServiceData from "../../data/home.json";
 
-const Service = ({ whySection }) => {
-  console.log(whySection);
+const Service = () => {
   useEffect(() => {
     sal();
 
@@ -38,17 +39,17 @@ const Service = ({ whySection }) => {
                   <span className="theme-gradient">WHY?</span>
                 </h4>
                 <h2 className="title w-600 mb--20">
-                  Connect with People from all around the world!
+                  Instant Content Generation with AI
                 </h2>
                 <p className="description b1">
-                  Join the Humanas Community and enjoy its benefits
+                  Provide Descriptions, Get Instant AI-Generated Content
                 </p>
               </div>
             </div>
           </div>
 
           <div className="row row--15 service-wrapper">
-            <ServiceItem ServiceData={whySection} />
+            <ServiceItem ServiceData={ServiceData} />
           </div>
         </div>
       </div>

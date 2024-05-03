@@ -6,7 +6,7 @@
 .theme-gradient {
   background: linear-gradient(
     90deg,
-    var(--color-secondary) 20%,
+    var(--color-secondary) 15%,
     var(--color-primary) 90%
   );
   text-transform: capitalize;
@@ -565,7 +565,7 @@
     left: 0;
     right: 0;
     bottom: 100%;
-    top: -2px;
+    top: auto;
   }
 }
 
@@ -844,7 +844,7 @@
   background: var(--color-dark);
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: relative;
   z-index: 9999999;
   top: 0;
   left: 0;
@@ -865,7 +865,8 @@
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
+  // position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);

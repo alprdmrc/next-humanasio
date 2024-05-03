@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useEffect } from "react";
 import sal from "sal.js";
 
 import BannerArea from "./BannerArea";
 
-import Form from "@/pages/Form";
+import Form from "@/app/Form";
 import Items from "./items";
 
 const Dashboard = () => {

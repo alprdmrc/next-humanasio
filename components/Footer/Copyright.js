@@ -11,10 +11,10 @@ const Copyright = () => {
               <div className="copyright-left">
                 <ul className="ft-menu link-hover">
                   <li>
-                    <Link href="/terms-policy">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link href="/terms-policy">Terms And Condition</Link>
+                    <Link href="/privacy-policy">Terms And Condition</Link>
                   </li>
                   <li>
                     <Link href="/contact-us">Contact Us</Link>
@@ -27,10 +27,10 @@ const Copyright = () => {
                 <p className="copyright-text">
                   Copyright © 2024
                   <Link
-                    href="https://humanas.io"
+                    href="https://www.humanas.io"
                     className="btn-read-more ps-2"
                   >
-                    <span>Humanas Technology</span>
+                    <span>Humanas</span>
                   </Link>
                 </p>
               </div>

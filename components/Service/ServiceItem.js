@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -23,12 +25,12 @@ const ServiceItem = ({ ServiceData }) => {
   return (
     <>
       {ServiceData &&
-        ServiceData.map((data, index) => (
+        ServiceData.service.map((data, index) => (
           <div
-            className="col-lg-3 col-md-6 col-sm-6 col-12"
+            className="col-lg-4 col-md-6 col-sm-6 col-12"
             data-sal="slide-up"
             data-sal-duration="700"
-            data-sal-delay="100"
+            data-sal-delay={`${data.delay}`}
             key={index}
           >
             <div className="service service__style--1 bg-color-blackest radius mt--25 text-center rbt-border-none variation-4 bg-flashlight">
@@ -39,9 +41,7 @@ const ServiceItem = ({ ServiceData }) => {
                 <h4 className="title w-600">
                   <Link href="#">{data.title}</Link>
                 </h4>
-                <p className="description b1 color-gray mb--0">
-                  {data.description}
-                </p>
+                <p className="description b1 color-gray mb--0">{data.desc}</p>
               </div>
             </div>
           </div>

@@ -1,18 +1,17 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import "venobox/dist/venobox.min.css";
 
 import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import bannerImg from "../../public/video/Video Kapak1.jpg";
+import bannerImg from "../../public/images/video/video-cover.jpg";
 import separator from "../../public/images/separator/separator-top.svg";
-import separatorBottom from "../../public/images/separator/separator-bottom.svg";
 
 const Home = () => {
-  const [showVideo, setShowVideo] = useState(false);
   useEffect(() => {
     import("venobox/dist/venobox.min.js").then((venobox) => {
       new venobox.default({
@@ -43,15 +42,6 @@ const Home = () => {
                 </h1>
                 <p className="has-medium-font-size">with</p>
                 <h1 className="title display-one">Humanas HR Systems</h1>
-                {/* <h1 className="title display-one">
-                  Discover Potentials
-                  <br />
-                  <p className="has-medium-font-size">with</p>
-                  <span className="theme-gradient">Humanas HR System</span>
-                </h1> */}
-                {/* <h2 className=""> */}
-                {/* Our Goal Is */}
-                {/* </h2> */}
                 <p className="b1 desc-text">
                   AI-Assisted Human Analytics Tool.
                 </p>
@@ -82,7 +72,7 @@ const Home = () => {
                 <div className="video-icon">
                   <Link
                     className="btn-default rounded-player popup-video border bg-white-dropshadow"
-                    href="/video/humanas-video-en.mp4"
+                    href="/images/video/humanas-video-en.mp4"
                     data-vbtype="video"
                     data-maxwidth="1080px"
                     data-autoplay="true"

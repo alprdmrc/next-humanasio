@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useAppContext } from "@/context/Context";
 
-import humanaslogo from "../../public/images/logo/gradientlogo.png";
-// import logo from "../../public/images/logo/logo.png";
-// import logoDark from "../../public/images/logo/logo-dark.png";
+import logo from "../../public/images/logo/logo.png";
+import logoDark from "../../public/images/logo/logo-dark.png";
 import avatar from "../../public/images/team/team-01.jpg";
 
 import Nav from "./Nav";
@@ -43,14 +42,14 @@ const HeaderDashboard = ({ display }) => {
                   <Link href="/">
                     <Image
                       className="logo-light"
-                      src={humanaslogo}
+                      src={logo}
                       width={201}
                       height={35}
                       alt="Corporate Logo"
                     />
                     <Image
                       className="logo-dark"
-                      src={humanaslogo}
+                      src={logoDark}
                       width={201}
                       height={35}
                       alt="Corporate Logo"

@@ -23,7 +23,7 @@ const Brands = () => {
                 data-sal-delay="100"
               >
                 <h4 className="subtitle ">
-                  <span className="theme-gradient">Our Awesome Clients</span>
+                  <span className="theme-gradient">Our Awesome Client</span>
                 </h4>
               </div>
             </div>

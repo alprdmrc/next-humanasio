@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 import RightPanelData from "../../data/dashboard.json";

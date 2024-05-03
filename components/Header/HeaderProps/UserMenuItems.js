@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const UserMenuItems = ({ parentClass }) => {
-  const router = useRouter();
-  const isActive = (href) => router.pathname === href;
+  const pathname = usePathname();
+  const isActive = (href) => pathname.startsWith(href);
   return (
     <>
       <ul className={parentClass}>

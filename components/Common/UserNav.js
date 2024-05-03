@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 import HeaderData from "../../data/header.json";
 
-const UserNav = ({title}) => {
-  const router = useRouter();
+const UserNav = ({ title }) => {
+  const pathname = usePathname();
 
-  const isActive = (href) => router.pathname === href;
+  const isActive = (href) => pathname.startsWith(href);
   return (
     <>
       <div className="banner-area">

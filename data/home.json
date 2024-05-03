@@ -1,58 +1,40 @@
 {
-  "how": [
-    {
-      "header": "1. Invite",
-      "title": "Easily send invitations through the system.",
-      "desc": "Invite your candidates and company employees to a unique journey with Lazy Guru, Humanas' gamified career application.",
-      "image": "/images/steps/1.jpg",
-      "trigger": "/images/steps/1-Lazy guru.svg"
-    },
-    {
-      "header": "2. Connect",
-      "title": "Build your connections.",
-      "desc": "The metaphorical journey in practice will reveal the personality types and professional potentials of candidates and employees. Fun, understandable and more realistic than ever. Here is Meta CV!",
-      "video": "/images/steps/2.mp4",
-      "trigger": "/images/steps/2-meta cv.svg"
-    },
-    {
-      "header": "3. Manage",
-      "title": "Review, group and compare meta CVs.",
-      "desc": "Review the Meta CVs of employees and candidates thanks to smart filters, create as many groups as you want and access compliance reports instantly.",
-      "image": "/images/steps/3.jpg",
-      "trigger": "/images/steps/3-Humanas HR.svg"
-    },
-    {
-      "header": "4. Analyse",
-      "title": "Humanas AID: Review your needs.",
-      "desc": "Take a closer look at your employee, candidate and company thanks to Humanas' smart algorithms; dedication, persuasion, leadership, agility, etc. Get recommendations based on productivity scores.",
-      "image": "/images/steps/4.jpg",
-      "trigger": "/images/steps/4-Humanas AID.svg"
-    }
-  ],
   "service": [
     {
-      "title": "Find the 'One'",
-      "desc": "Hire the right person by learning about candidates' potential before the inverview",
+      "title": "Effortless Content AI",
+      "desc": "Let our AI-powered service take the hard work out of content creation. Get started today with AI.",
       "icon": "activity",
       "delay": 100
     },
     {
-      "title": "Promote",
-      "desc": "Optimize yor employees' job positions with compliance reports",
+      "title": "Your Words, Our Tech",
+      "desc": "Discover how AI can transform your ideas into engaging with our qualitifull service for a better content.",
       "icon": "cast",
       "delay": 100
     },
     {
-      "title": "Backup Plans",
-      "desc": "Review your workforce backup plans for a sustainable structure",
+      "title": "AI-Powered Writing",
+      "desc": "Access AI-generated content for your blogs, websites, and more with our qualitifull convenient service.",
       "icon": "map",
       "delay": 200
     },
     {
-      "title": "Sector Analysis",
-      "desc": "Get AI-powered recommendations about your industry and current situation.",
+      "title": "AI Generation Simple",
+      "desc": "Experience the ease of content creation with our AI service. Write less, achieve more.",
       "icon": "loader",
       "delay": 100
+    },
+    {
+      "title": "Quality AI Content",
+      "desc": "Get professionally written content in no time with our AI service. Quality meets speed.",
+      "icon": "speaker",
+      "delay": 100
+    },
+    {
+      "title": "Your Writing Assistant",
+      "desc": "Collaborate with AI to generate content that resonates with your audience. Try it now.",
+      "icon": "terminal",
+      "delay": 200
     }
   ],
   "timeline": [
@@ -201,83 +183,6 @@
           "isMinus": false
         }
       ]
-    }
-  ],
-  "team": [
-    {
-      "name": "Alper Demirci",
-      "title": "Full Stack Developer",
-      "picture": "/images/team/alper-demirci-16936470616.jpeg",
-      "text": "",
-      "isActive": false,
-      "link": "https://www.linkedin.com/in/alperfdemirci/",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Ibrahim Biricik",
-      "title": "Back-end Developer",
-      "picture": "/images/team/ibrahim-can-biricik-16896709346.png",
-      "text": "",
-      "isActive": false,
-      "link": "https://www.linkedin.com/in/alperfdemirci/",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Ibrahim Biricik",
-      "title": "Back-end Developer",
-      "picture": "/images/team/ibrahim-can-biricik-16896709346.png",
-      "text": "",
-      "isActive": false,
-      "link": "https://www.linkedin.com/in/alperfdemirci/",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Muhammet Emin Varlg",
-      "title": "Game Developer",
-      "picture": "/images/team/muhammet-emin-varelci-16910514524.png",
-      "text": "",
-      "isActive": false,
-      "link": "https://www.linkedin.com/in/alperfdemirci/",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Muhammet Emin Varlg",
-      "title": "Game Developer",
-      "picture": "/images/team/muhammet-emin-varelci-16910514524.png",
-      "text": "",
-      "isActive": false,
-      "link": "https://www.linkedin.com/in/alperfdemirci/",
-      "icon": "linkedin"
-    },
-    {
-      "name": "Muhammet Emin Varlg",
-      "title": "Game Developer",
-      "picture": "/images/team/muhammet-emin-varelci-16910514524.png",
-      "text": "",
-      "isActive": false
-    }
-  ],
-  "testimonial": [
-    {
-      "name": "Alper Demirci",
-      "title": "Full Stack Developer",
-      "picture": "/images/team/alper-demirci-16936470616.jpeg",
-      "company": "Humanas Technology",
-      "review": "Garanti BBVA Technologies used Humanas to improve their hiring process, resulting in a 70% increase in efficiency for identifying suitable candidates, for example, for a Risk Management Analyst role. Humanas helped Garanti BBVA Technologies to narrow down a large pool of candidates to a manageable number quickly and efficiently by evaluating their skills and experiences, contributing to the bank's success in the competitive banking industry."
-    },
-    {
-      "name": "Ibrahim Biricik",
-      "title": "Full Stack Developer",
-      "picture": "/images/team/alper-demirci-16936470616.jpeg",
-      "company": "Humanas Technology",
-      "review": "Garanti BBVA Technologies used Humanas to improve their hiring process, resulting in a 70% increase in efficiency for identifying suitable candidates, for example, for a Risk Management Analyst role. Humanas helped Garanti BBVA Technologies to narrow down a large pool of candidates to a manageable number quickly and efficiently by evaluating their skills and experiences, contributing to the bank's success in the competitive banking industry."
-    },
-    {
-      "name": "Nurettin Arkan",
-      "title": "Project Manager",
-      "picture": "/images/team/alper-demirci-16936470616.jpeg",
-      "company": "Draft Education",
-      "review": "Garanti BBVA Technologies used Humanas to improve their hiring process, resulting in a 70% increase in efficiency for identifying suitable candidates, for example, for a Risk Management Analyst role. Humanas helped Garanti BBVA Technologies to narrow down a large pool of candidates to a manageable number quickly and efficiently by evaluating their skills and experiences, contributing to the bank's success in the competitive banking industry."
     }
   ],
   "accordion": [

@@ -2,15 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ToolsData from "../../data/header.json";
-import { useRouter } from "next/router";
 
 const Items = () => {
-  const router = useRouter(); // Initialize the useRouter hook
-
-  const handleClick = (event, link) => {
-    event.preventDefault();
-    router.push(link).then(() => router.reload()); // Push the new link and reload the page
-  };
   return (
     <>
       {ToolsData &&
@@ -21,9 +14,8 @@ const Items = () => {
               className={`genarator-card ${
                 data.badge === "Coming" ? "disabled" : ""
               }`}
-              onClick={(e) => handleClick(e, data.link)}
             >
-              <div className="inner">
+              <div className="inner" data-bs-dismiss="modal">
                 <div className="left-align">
                   <div className="img-bar">
                     <Image

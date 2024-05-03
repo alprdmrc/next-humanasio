@@ -1,10 +1,12 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import { useAppContext } from "@/context/Context";
 
-import humanaslogo from "../../public/images/logo/gradientlogo.png";
+import logo from "../../public/images/logo/gradientlogo.png";
 import ToolsData from "../../data/header.json";
 
 import Nav from "./Nav";
@@ -17,7 +19,7 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
-      if (scrolled > 500) {
+      if (scrolled > 200) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -44,10 +46,10 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
                 <Link href="/">
                   <Image
                     className="logo-light"
-                    src={humanaslogo}
+                    src={logo}
                     width={201}
                     height={35}
-                    alt="Humanas Logo"
+                    alt="ChatBot Logo"
                   />
                 </Link>
               </div>

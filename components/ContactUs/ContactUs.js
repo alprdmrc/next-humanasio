@@ -28,7 +28,7 @@ const ContactUs = () => {
                         <i className="feather-headphones"></i>
                       </div>
                       <div className="inner">
-                        <h4 className="title">Contact Phone Number</h4>
+                        <h4 className="title">Our Phone Number</h4>
                         <p>
                           <a href="#">+90 232 332 0462</a>
                         </p>

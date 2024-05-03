@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 import DashboardItem from "../../data/header.json";
 
@@ -9,26 +11,20 @@ import menuImg from "../../public/images/menu-img/menu-img-2.png";
 import { useAppContext } from "@/context/Context";
 
 const Nav = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const { showItem, setShowItem } = useAppContext();
 
-  const isActive = (href) => router.pathname === href;
+  const isActive = (href) => pathname.startsWith(href);
 
   return (
     <>
       <ul className="mainmenu">
-        {/* <li>
-          <Link href="#">Products</Link>
-        </li>
-        <li>
-          <Link href="#">Services</Link>
-        </li> */}
         <li>
           <Link href="/our-sciences">Our Sciences</Link>
         </li>
-        {/* <li>
-          <Link href="#">Pricing</Link>
-        </li> */}
+        <li>
+          <Link href="/community">Community</Link>
+        </li>
         {/* <li className="with-megamenu has-menu-child-item position-relative">
           <a
             href="#"
@@ -68,12 +64,6 @@ const Nav = () => {
               </div>
             </div>
           </div>
-        </li> */}
-        <li>
-          <Link href="/community">Community</Link>
-        </li>
-        {/* <li>
-          <Link href="/frequently-asked-questions">F.A.Q.</Link>
         </li> */}
       </ul>
     </>

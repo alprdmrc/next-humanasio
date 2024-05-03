@@ -1,4 +1,4 @@
-import Form from "@/pages/Form";
+import Form from "@/app/Form";
 import React from "react";
 
 const StaticbarDashboard = () => {

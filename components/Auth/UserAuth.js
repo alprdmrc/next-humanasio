@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useAppContext } from "@/context/Context";
@@ -8,7 +10,7 @@ import sal from "sal.js";
 import boxedLogo from "../../public/images/logo/boxed-logo.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
-import PageHead from "@/pages/Head";
+// import PageHead from "@/pages/Head";
 
 const UserAuth = () => {
   const { toggleAuth, setToggleAuth } = useAppContext();
@@ -29,7 +31,7 @@ const UserAuth = () => {
   }, []);
   return (
     <>
-      <PageHead title={`${toggleAuth ? "Log In" : "SignUp"}`} />
+      {/* <PageHead title={`${toggleAuth ? "Log In" : "SignUp"}`} /> */}
       <div
         className="signup-area rainbow-section-gapTop-big"
         data-black-overlay="2"

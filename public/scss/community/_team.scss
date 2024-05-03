@@ -1,0 +1,10 @@
+.teamMemberCardImage {
+  // object-fit: "cover";
+  width: 250px;
+  height: 330px;
+  filter: grayscale(1);
+  &:hover {
+    filter: grayscale(0);
+    transition: all 400ms;
+  }
+}

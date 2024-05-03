@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import sal from "sal.js";
 
 import "venobox/dist/venobox.min.css";
 
 import TimnelineData from "../../data/home.json";
 import Link from "next/link";
-import Slider from "../Slider/Slider";
 
 const Timeline = () => {
-  const [price, setPrice] = useState(0);
   useEffect(() => {
     sal();
 
@@ -44,7 +44,7 @@ const Timeline = () => {
             <div className="col-lg-10 offset-lg-1 mt--30">
               <div className="timeline-style-two bg-flashlight bg-color-blackest">
                 <div className="row row--0">
-                  {/* {TimnelineData &&
+                  {TimnelineData &&
                     TimnelineData.timeline.map((data, index) => (
                       <div
                         className="col-lg-4 col-md-4 rainbow-timeline-single dark-line"
@@ -77,38 +77,7 @@ const Timeline = () => {
                           </p>
                         </div>
                       </div>
-                    ))} */}
-                  <div className="col-lg-12 col-md-4 rainbow-timeline-single dark-line">
-                    <div className="rainbow-timeline">
-                      <div className="progress-line">
-                        <div className="line-inner"></div>
-                      </div>
-                      <div className="progress-dot">
-                        <div className="dot-level">
-                          <div className="dot-inner"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="rainbow-timeline">
-                    <Slider />
-                    <p className="">{price}</p>
-                    <input
-                      type="range"
-                      min="11"
-                      max="500"
-                      onChange={(e) => setPrice(e.target.value)}
-                      className="col-lg-6 rainbow-timeline-single dark-line"
-                    />
-                    <div className="progress-line">
-                      <div className="line-inner"></div>
-                    </div>
-                    <div className="progress-dot">
-                      <div className="dot-level">
-                        <div className="dot-inner"></div>
-                      </div>
-                    </div>
-                  </div>
+                    ))}
                 </div>
               </div>
               <div className="button-group mt--50 text-center">

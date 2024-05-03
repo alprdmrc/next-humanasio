@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import sal from "sal.js";
 
@@ -49,15 +51,13 @@ const PricingTwo = ({
                       data-sal-delay="150"
                     >
                       <h4 className="subtitle">
-                        <span className="theme-gradient">
-                          Humanas Community
-                        </span>
+                        <span className="theme-gradient">Pricing</span>
                       </h4>
-                      <h2 className="title w-600 mb--20">Together Stronger</h2>
+                      <h2 className="title w-600 mb--20">
+                        Commence Content Journey with AI
+                      </h2>
                       <p className="description b1">
-                        Humanas Team, HR Professionals and Candidates are three
-                        main components of our Community. We believe a happy
-                        work environment is crucial for a happy life. So we are.
+                        Collaborate with AI to generate content that resonates.
                       </p>
                     </div>
                   ) : (
@@ -72,42 +72,30 @@ const PricingTwo = ({
                     >
                       <button
                         className="nav-link active"
-                        id="nav-team-tab"
+                        id="nav-home-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-team"
+                        data-bs-target="#nav-home"
                         type="button"
                         role="tab"
-                        aria-controls="nav-team"
+                        aria-controls="nav-home"
                         aria-selected="true"
                       >
-                        Humanas Team
+                        Monthly
                       </button>
                       <button
-                        className="nav-link"
-                        id="nav-hrs-tab"
+                        className="nav-link with-badge"
+                        id="nav-profile-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-hrs"
+                        data-bs-target="#nav-profile"
                         type="button"
                         role="tab"
-                        aria-controls="nav-hrs"
-                        aria-selected="true"
-                      >
-                        HR Professionals
-                      </button>
-                      <button
-                        className="nav-link"
-                        id="nav-cands-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-cands"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-cands"
+                        aria-controls="nav-profile"
                         aria-selected="false"
                       >
-                        Candidates
-                        {/* <span className="rainbow-badge-card badge-border">
+                        Yearly
+                        <span className="rainbow-badge-card badge-border">
                           20% Off
-                        </span> */}
+                        </span>
                       </button>
                     </div>
                   </nav>
@@ -117,30 +105,9 @@ const PricingTwo = ({
               <div className={childClass} id="nav-tabContent">
                 <div
                   className="tab-pane fade active show"
-                  id="nav-team"
+                  id="nav-home"
                   role="tabpanel"
-                  aria-labelledby="nav-team-tab"
-                >
-                  <div className="row row--15 mt_dec--30">
-                    {PricingData &&
-                      PricingData.team
-                        .slice(start, end)
-                        .map((data, index) => (
-                          <SinglePrice
-                            {...data}
-                            data={data}
-                            key={index}
-                            parentClass={parentClass}
-                            incresePrice={false}
-                          />
-                        ))}
-                  </div>
-                </div>
-                <div
-                  className="tab-pane fade show"
-                  id="nav-hrs"
-                  role="tabpanel"
-                  aria-labelledby="nav-hrs-tab"
+                  aria-labelledby="nav-home-tab"
                 >
                   <div className="row row--15 mt_dec--30">
                     {PricingData &&
@@ -160,9 +127,9 @@ const PricingTwo = ({
 
                 <div
                   className="tab-pane fade"
-                  id="nav-cands"
+                  id="nav-profile"
                   role="tabpanel"
-                  aria-labelledby="nav-cands-tab"
+                  aria-labelledby="nav-profile-tab"
                 >
                   <div className="row row--15">
                     {PricingData &&

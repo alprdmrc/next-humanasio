@@ -17,12 +17,12 @@
 <feGaussianBlur stdDeviation="12.25" result="effect1_foregroundBlur_6_142"/>
 </filter>
 <linearGradient id="paint0_linear_6_142" x1="600" y1="0" x2="600" y2="61" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0d568a" stop-opacity="0"/>
-<stop offset="1" stop-color="#0d568a" stop-opacity="0.15"/>
+<stop stop-color="#DD00AC" stop-opacity="0"/>
+<stop offset="1" stop-color="#DD00AC" stop-opacity="0.15"/>
 </linearGradient>
 <linearGradient id="paint1_linear_6_142" x1="600.697" y1="44" x2="574.576" y2="-469.733" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0d568a" stop-opacity="0.06"/>
-<stop offset="1" stop-color="#0d568a"/>
+<stop stop-color="#D601AB" stop-opacity="0.06"/>
+<stop offset="1" stop-color="#D601AB"/>
 </linearGradient>
 <linearGradient id="paint2_linear_6_142" x1="0" y1="0.999287" x2="1200" y2="0.999202" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0AA973" stop-opacity="0"/>

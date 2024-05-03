@@ -1,14 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect } from "react";
 import { useAppContext } from "@/context/Context";
 
 import logoLight from "../../public/images/logo/logo.png";
 import logoDark from "../../public/images/logo/logo-dark.png";
-import humanaslogo from "../../public/images/logo/gradientlogo.png";
 
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";
-import { useEffect } from "react";
-import Link from "next/link";
 
 const PopupMobileMenu = () => {
   const { activeMobileMenu, setActiveMobileMenu } = useAppContext();
@@ -38,14 +39,14 @@ const PopupMobileMenu = () => {
               <Link href="/">
                 <Image
                   className="logo-light"
-                  src={humanaslogo}
+                  src={logoLight}
                   width={172}
                   height={30}
                   alt="Corporate Logo"
                 />
                 <Image
                   className="logo-dark"
-                  src={humanaslogo}
+                  src={logoDark}
                   width={172}
                   height={30}
                   alt="Corporate Logo"

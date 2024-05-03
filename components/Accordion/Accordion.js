@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import sal from "sal.js";
 import AccordionItem from "./AccordionItem";
@@ -21,7 +23,7 @@ const Accordion = ({ isHead }) => {
                   data-sal-delay="100"
                 >
                   <h4 className="subtitle ">
-                    <span className="theme-gradient">F.A.Q.</span>
+                    <span className="theme-gradient">Accordion</span>
                   </h4>
                   <h2 className="title w-600 mb--20">
                     Frequently Asked Questions
