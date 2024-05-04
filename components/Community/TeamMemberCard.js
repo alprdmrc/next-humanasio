@@ -27,7 +27,7 @@ const TeamMemberCard = ({ data, parentClass }) => {
             <div className="pricing-top">
               <div className="pricing-header">
                 <div className="pricing">
-                  <div className="price-wrapper">
+                  <div className="teamMemberCardImageWrapper">
                     <Image
                       width={250}
                       height={330}
