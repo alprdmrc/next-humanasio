@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "strapi.gidebilirmiyim.com",
+        hostname: "strapi.humanas.io",
         pathname: "/uploads/**",
       },
     ],

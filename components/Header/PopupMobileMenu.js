@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useAppContext } from "@/context/Context";
 
-import logoLight from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/logo/logo-dark.png";
+import logoLight from "../../public/images/logo/gradientlogo.png";
+import logoDark from "../../public/images/logo/gradientlogo.png";
 
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";
@@ -66,9 +66,9 @@ const PopupMobileMenu = () => {
             <Nav />
 
             <div className="rbt-sm-separator"></div>
-            <div className="rbt-default-sidebar-wrapper">
+            {/* <div className="rbt-default-sidebar-wrapper">
               <SmallNav />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

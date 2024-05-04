@@ -1,5 +1,10 @@
+.teamMemberCardImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .teamMemberCardImage {
-  // object-fit: "cover";
+  object-fit: cover;
   width: 250px;
   height: 330px;
   filter: grayscale(1);

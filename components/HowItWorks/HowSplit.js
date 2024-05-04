@@ -29,8 +29,8 @@ const HowSplit = ({ step, reverse }) => {
                     )}
                     {step.image.data.attributes.mime.includes("video") && (
                       <video
-                        width="650"
-                        height="589"
+                        width="100%"
+                        height="100%"
                         controls={false}
                         autoPlay
                         muted
